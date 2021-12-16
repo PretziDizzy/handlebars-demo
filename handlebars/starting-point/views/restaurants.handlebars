@@ -14,15 +14,10 @@
 				View Restaurant
 			</a>
 			<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-				{{!-- {{#each }} --}}
-				<li><a class="dropdown-item" href="/restaurants/1">Bayroot</a></li>
-				<li><a class="dropdown-item" href="/restaurants/2">The Berkley</a></li>
-				<li><a class="dropdown-item" href="/restaurants/3">Balthazar</a></li>
-				<li><a class="dropdown-item" href="/restaurants/4">BernersTavern</a></li>
-				<li><a class="dropdown-item" href="/restaurants/5">Blanchette East</a></li>
-				<li><a class="dropdown-item" href="/restaurants/6">Bob Bob Ricard</a></li>
-				<li><a class="dropdown-item" href="/restaurants/7">Cafe Monico</a></li>
-				<li><a class="dropdown-item" href="/restaurants/8">Impact crator</a></li>
+				{{#each restaurants}}
+				<li><a class="dropdown-item" href="/restaurants/{{id}}">{{name}}</a></li>
+				{{/each}}
+				
 			</ul>
 			</li>
 			<li class="nav-item">
